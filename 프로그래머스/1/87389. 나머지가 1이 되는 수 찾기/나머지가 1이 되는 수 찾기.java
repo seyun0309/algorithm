@@ -1,13 +1,9 @@
 class Solution {
     public int solution(int n) {
-        int answer = n;
+        int answer = 2;
         
-        for(int i=2; i<=n; i++) {
-            if(n % i == 1) {
-                if(answer > i) {
-                    answer = i;
-                }
-            }
+        while(n%answer!=1) {
+            answer++;
         }
         
         return answer;
