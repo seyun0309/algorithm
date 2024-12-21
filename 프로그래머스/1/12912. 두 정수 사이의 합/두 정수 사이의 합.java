@@ -7,16 +7,13 @@ class Solution {
         
         if(a==b) return a;
         
-        if(a<b) {
-            while(a<=b) {
-            answer += a;
-            a++;
-            }
-        } else {
-            while(b<=a) {
-                answer += b;
-                b++;
-            }
+        int start = Math.min(a, b);
+        int end = Math.max(a, b);
+
+        
+        while(start<=end) {
+            answer += start;
+             start++;
         }
         
         return answer;
