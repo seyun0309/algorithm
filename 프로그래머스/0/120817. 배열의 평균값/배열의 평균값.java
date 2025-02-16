@@ -3,9 +3,16 @@ import java.util.*;
 class Solution {
     public double solution(int[] numbers) {
         double answer = 0;
+        double sum = 0;
         
-        return Arrays.stream(numbers)
-            .average()
-            .orElse(0);
+        for(int i=0; i<numbers.length; i++) {
+            sum += numbers[i];
+        }
+        
+        return sum / numbers.length;
+        
+        // return Arrays.stream(numbers)
+        //     .average()
+        //     .orElse(0);
     }
 }
