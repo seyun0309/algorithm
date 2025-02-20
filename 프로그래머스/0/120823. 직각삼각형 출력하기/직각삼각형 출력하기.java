@@ -6,10 +6,14 @@ public class Solution {
         int n = sc.nextInt();
         
         for(int i=1; i<=n; i++) {
-            for(int m=1; m<=i; m++) {
-                System.out.print("*");
-            }  
-            System.out.println();
+            System.out.println("*".repeat(i));
         }
+        
+        // for(int i=1; i<=n; i++) {
+        //     for(int m=1; m<=i; m++) {
+        //         System.out.print("*");
+        //     }  
+        //     System.out.println();
+        // }
     }
 }
