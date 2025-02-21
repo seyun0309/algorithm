@@ -2,12 +2,12 @@ class Solution {
     public String solution(String my_string, String letter) {
         String answer = "";
         
-        String[] str = my_string.split(letter);
+        return my_string.replace(letter, "");
         
-        for(String s : str) {
-            answer += s;
-        }
+//         String[] str = my_string.split(letter);
         
-        return answer;
+//         for(String s : str) {
+//             answer += s;
+//         }
     }
 }
